@@ -3,49 +3,110 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
+
     <body>
         <header>
             <h1 id="top">Adam Bowers</h1>
             <nav>
-                <h1 id="ToC">Table of Contents</h1><br>
-                <a href='#AboutMe'>About Me</a><br>
-                <a href='#Portfolio'>Portfolio</a><br>
-                <a href='#TechnicalSkills'>Technical Skills</a><br>
-                <a href='#Contact'>Contact</a><br><hr>
+                <table>
+                    <tr>
+                        <td><a href='#AboutMe'>About Me</a></td>
+                        <td><a href='#Projects'>Projects</a></td>
+                        <td><a href='#TechnicalSkills'>Technical Skills</a></td>
+                        <td><a href='#Education'>Education</a></td>
+                        <td><a href='#Contact'>Contact</a></td>
+                    </tr>
+                </table>
+                <br><hr>
             </nav>
         </header>
-        <section>
+        <aside>
             <header>
                 <h1 id="AboutMe">About Me</h1>
             </header>
-                <article>
-                    <p>Hello World</p><br><hr>
-                </article>
-        </section>
+            <article>
+                <p>Recently graduated computer science major who is excited for 
+                    new opportunities. Well-versed in agile software development 
+                    methodologies. Quick to take ownership and learn new 
+                    technologies that arise. Willing to relocate for the 
+                    right experience.</p>
+                <br>
+                <h2>Personal Interests</h2>
+                <p>Cooking; Podcasts; Japanese Language; Meeting new people; Coffee; Science Fiction</p>    
+            </article>
+        </aside>
+        <br><hr>
         <section>
             <header>
-                <h1 id="Portfolio">Portfolio</h1>
+                <h1 id="Projects">Projects</h1>
             </header>
             <article>
-                <p>more content</p><br>
-                <h2 id="TechnicalSkills">Technical Skills</h2>
+                <h2>Edesia: Meal Planning and Recipe Application</h2>
+                <ul>
+                    <li><b>Goal:</b> To create a user-friendly and 
+                        intuitive meal planning app for the Android 
+                        mobile platform.</li>
+                    <li><b>Technologies Used:</b> Java, Android Studio, 
+                        SQLite, GitHub with ZenHub extension.</li>
+                    <li><b>Responsibilities:</b> Front-end developer; 
+                        Product designer; Scrum master.
+                        <ul>
+                            <li>As a front-end developer, I worked on creating GUIs, 
+                                features for the user's grocery list, and implemented 
+                                Google's Cloud Vision API in order to use an 
+                                OCR (optical character reader). I also developed the 
+                                navigation components for the app. </li>
+                            <li>As the product designer, I planned the main features and 
+                                researched various software to help develop solutions towards 
+                                implementing those features. I also designed the overall system 
+                                architecture and detailed how different subsystems should 
+                                communicate and interact with one-another.</li>
+                            <li>As the scrum master, I lead weekly scrum meetings for my team. 
+                                We used agile methods with GitHub to prioritize our weekly sprints.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <br><hr>
+        <section>
+            <header>
+                <h1 id="TechnicalSkills">Technical Skills</h1>
+            </header>
+            <article>
                 <ul>
                     <li>SOLID</li>
                     <li>OOP</li>
-                </ul><br><hr>
+                </ul>
             </article>
-            <footer>
-        
-            </footer>
         </section>
+        <br><hr>
+        <section>
+            <header>
+                <h1 id="Education">Education</h1>
+            </header>
+            <article>
+                <h2>University of North Carolina at Greensboro</h2>
+                <p>Graduated May 2019 with a Bachelor of Science in Computer Science degree.</p>
+                <br>
+                <h2>Forsyth Technical Community College</h2>
+                <p>Graduated December 2016 with an Associate in Science degree.</p>
+            </article>
+        </section>
+        <br><hr>
         <footer>
             <h1 id="Contact">Contact</h1>
-            <a href="mailto:ajbowers.dev@outlook.com">Send me an email</a><br>
-            <a href="https://www.linkedin.com/in/ajbowers-dev/" target="_blank">Connect with me on LinkedIn</a><br>
-            <a href="https://github.com/aLotofAdam" target="_blank">Check out my projects on Github</a><br>
-            <a href="https://twitter.com/alotofAdam" target="_blank">Follow me on Twitter</a><br>
-            <a href='#top'>To Top of Page</a>
+            <ul>
+                <li><a href="mailto:ajbowers.dev@outlook.com">Send me an email</a></li>
+                <li><a href="https://www.linkedin.com/in/ajbowers-dev/" target="_blank">Connect with me on LinkedIn</a></li>
+                <li><a href="https://github.com/aLotofAdam" target="_blank">Check out my projects on Github</a></li>
+                <li><a href="https://twitter.com/alotofAdam" target="_blank">Follow me on Twitter</a></li>
+                <br>
+                <a href='#top'>To Top of Page</a>
+            </ul>
         </footer>
+        <!--<script src="script.js"></script>-->
     </body>
 </html>

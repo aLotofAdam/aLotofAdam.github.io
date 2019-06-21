@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: lightgrey;
+}
+
+header {
+    background-color: lightcyan;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    width: 80%;
+    border: 5px groove rgb(235, 255, 255);
+}
+
+aside {
+    background-color: lightcyan;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+    text-align: start;
+    border: 5px groove rgb(235, 255, 255);
+}
+
+section {
+    background-color: lightcyan;
+    float: right;
+    padding: 20px;
+    margin: 10px;
+    width: 60%;
+    box-sizing: border-box;
+    text-align: start;
+    border: 5px groove rgb(235, 255, 255);
+}
+
+footer {
+    background-color: lightcyan;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    border: 5px groove rgb(235, 255, 255);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    text-align: justify;
+}
+
+article {
+    border-bottom: 2px solid grey;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+p, ul {
+    font-size: 1em;
+}

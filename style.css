@@ -1,50 +1,81 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 100%;
     background-color: rgb(235, 235, 235);
 }
 
 header, footer {
     background-color: rgb(148, 224, 224);
-    padding: 30px;
-    margin: 5px;
-    text-align: justify;
-    font-size: 35px;
+    padding: 20px;
     width: 100%;
-    border: 5px groove rgb(235, 255, 255);
+    box-sizing: border-box;
+    text-align: center;
+    clear: both;
+}
+
+.main-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 aside {
-    background-color: rgb(148, 224, 224);
+    background-color: white;
     float: left;
+    display: block;
     width: 30%;
     padding: 5px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 9%;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 8px 5px grey;
     text-align: start;
-    border: 5px groove rgb(235, 255, 255);
+    border-left: 5px solid rgb(148, 224, 224);
 }
 
 section {
-    background-color: rgb(148, 224, 224);
-    float: right;
-    width:60%;
+    background-color: white;
+    float:right;
+    clear:right;
+    display: block;
+    margin-top: 10px;
+    width:50%;
     padding: 20px;
-    margin: 10px;
+    margin-right: 9%;
     box-sizing: border-box;
+    box-shadow: 8px 8px 8px 5px grey;
     text-align: start;
-    border: 5px groove rgb(235, 255, 255);
+    border-left: 5px solid rgb(148, 224, 224);
 }
 
 h1 {
     font-size: 2.5em;
 }
 
+h2 {
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.5em;
+    clear: both;
+}
+
 nav {
-    text-align: justify;
+    text-align: center;
+    font-size: 1.875em;
 }
 
 article {
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .info-container {
@@ -52,13 +83,5 @@ article {
 }
 
 img, td {
-    max-width: 100%;
-}
-
-h2 {
-    font-size: 1.875em;
-}
-
-p, ul {
-    font-size: 1em;
+    max-width: 50%;
 }

@@ -8,7 +8,7 @@
 
     <body>
         <header>
-            <h1 id="top">Adam Bowers</h1>
+            <h1 id="top"><strong>Adam Bowers</strong></h1>
             <nav>
                 <table>
                     <tr>
@@ -21,77 +21,90 @@
                 </table>
             </nav>
         </header>
-        <aside>
-            <h1 id="AboutMe">About Me</h1>
-            <article>
-                <img src="/icons/headshot.jpg" alt="Profile Picture">
-                <div class="info-container">
-                    <p><img src="/icons/baseline-work-24px.svg" alt="Role Icon">Software Developer</p>
-                    <p><img src="/icons/baseline-home-24px.svg" alt="Home Icon">Winston-Salem, North Carolina</p>
-                    <p><img src="/icons/baseline-school-24px.svg" alt="Education Icon">B.S. degree in Computer Science</p>
-                    <p><a href="mailto:ajbowers.dev@outlook.com"><img src="/icons/baseline-email-24px.svg" alt="Email Icon">ajbowers.dev@outlook.com</a></p>
-                </div>
-                <p>Recently graduated computer science major who is excited for 
-                    new opportunities. Well-versed in agile software development 
-                    methodologies. Quick to take ownership and learn new 
-                    technologies that arise. Willing to relocate for the 
-                    right experience.</p>
-                <br>
+        <div class="main-content">
+            <aside>
+                <h2 id="AboutMe">About Me</h2>
+                <article>
+                    <img src="/icons/headshot.jpg" alt="Profile Picture">
+                    <div class="info-container">
+                        <p><img src="/icons/baseline-work-24px.svg" alt="Role Icon">Software Developer</p>
+                        <p><img src="/icons/baseline-home-24px.svg" alt="Home Icon">Winston-Salem, North Carolina</p>
+                        <p><img src="/icons/baseline-school-24px.svg" alt="Education Icon">B.S. degree in Computer Science</p>
+                        <p><a href="mailto:ajbowers.dev@outlook.com"><img src="/icons/baseline-email-24px.svg" alt="Email Icon">ajbowers.dev@outlook.com</a></p>
+                    </div>
+                    <p>Recently graduated computer science major who is excited for 
+                        new opportunities. Well-versed in agile software development 
+                        methodologies. Quick to take ownership and learn new 
+                        technologies that arise. Willing to relocate for the 
+                        right experience.</p>
+                </article>
+                <h2 id="TechnicalSkills">Technical Skills</h2>
+                <article>
+                    <ul>
+                        <li><h3>Programming and Markup Languages:</h3>
+                            <ul>
+                                <li><b>Proficient: </b>Java, HTML5, CSS3, Python, C/C++</li>
+                                <li><b>Familiar: </b>Javascript, PHP, x86 Assembly</li>
+                            </ul>
+                        </li>
+                        <li><h3>Software and Frameworks:</h3>
+                            <ul>
+                                <li>VSCode, MySQL, Android Studio, Git, Ubuntu, Unity, VMware, Netbeans, Jupyter Notebook</li>
+                            </ul>
+                        </li>
+                        <li><h3>Knowledgeable in:</h3>
+                            <ul>
+                                <li>Agile Methodologies</li>
+                                <li>OOP</li>
+                                <li>SOLID Principles</li>
+                                <li>Relational Databases</li>
+                                <li>SQL</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
                 <h2>Hobbies</h2>
-                <p>Cooking; Podcasts; Japanese Language; Meeting new people; Coffee; Science Fiction</p>    
-            </article>
-            <br>
-            <h1 id="TechnicalSkills">Technical Skills</h1>
-            <article>
+                <p>Cooking; Podcasts; Japanese Language; Coffee; Science Fiction</p>   
+            </aside>
+            <section>
+                <h2 id="Projects">Projects</h2>
+                <h3>Edesia: Meal Planning and Recipe Application</h3>
                 <ul>
-                    <li>SOLID</li>
-                    <li>OOP</li>
+                    <li><b>Goal:</b> To create a user-friendly and
+                        intuitive meal planning app for the Android
+                        mobile platform.</li>
+                    <li><b>Technologies Used:</b> Java, Android Studio,
+                        SQLite, GitHub with ZenHub extension.</li>
+                    <li><b>Responsibilities:</b> Front-end developer;
+                        Product designer; Scrum master.
+                        <ul>
+                            <li>As a front-end developer, I worked on creating GUIs,
+                                features for the user's grocery list, and implemented
+                                Google's Cloud Vision API in order to use an
+                                OCR (optical character reader). I also developed the
+                                navigation components for the app. </li>
+                            <li>As the product designer, I planned the main features and
+                                researched various software to help develop solutions towards
+                                implementing those features. I also designed the overall system
+                                architecture and detailed how different subsystems should
+                                communicate and interact with one-another.</li>
+                            <li>As the scrum master, I lead weekly scrum meetings for my team.
+                                We used agile methods with GitHub to prioritize our weekly sprints.</li>
+                        </ul>
+                    </li>
                 </ul>
-            </article>
-            <br>
-            <h1 id="Education">Education</h1>
-            <img src="/icons/baseline-school-24px.svg" alt="Education Icon" style="float:left">
-            <article>
+            </section>
+            <section>
+                <h2 id="Education"><img src="/icons/baseline-school-24px.svg" alt="Education Icon">Education</h2>
                 <h2>University of North Carolina at Greensboro</h2>
                 <p>Graduated May 2019 with a Bachelor of Science in Computer Science degree.</p>
                 <br>
                 <h2>Forsyth Technical Community College</h2>
                 <p>Graduated December 2016 with an Associate in Science degree.</p>
-            </article>
-        </aside>
-        <section>
-            <h1 id="Projects">Projects</h1>
-            <article>
-                <h2>Edesia: Meal Planning and Recipe Application</h2>
-                <ul>
-                    <li><b>Goal:</b> To create a user-friendly and 
-                        intuitive meal planning app for the Android 
-                        mobile platform.</li>
-                    <li><b>Technologies Used:</b> Java, Android Studio, 
-                        SQLite, GitHub with ZenHub extension.</li>
-                    <li><b>Responsibilities:</b> Front-end developer; 
-                        Product designer; Scrum master.
-                        <ul>
-                            <li>As a front-end developer, I worked on creating GUIs, 
-                                features for the user's grocery list, and implemented 
-                                Google's Cloud Vision API in order to use an 
-                                OCR (optical character reader). I also developed the 
-                                navigation components for the app. </li>
-                            <li>As the product designer, I planned the main features and 
-                                researched various software to help develop solutions towards 
-                                implementing those features. I also designed the overall system 
-                                architecture and detailed how different subsystems should 
-                                communicate and interact with one-another.</li>
-                            <li>As the scrum master, I lead weekly scrum meetings for my team. 
-                                We used agile methods with GitHub to prioritize our weekly sprints.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <br><hr>
+            </section>
+        </div>
         <footer>
-            <h1 id="Contact">Contact</h1>
+            <h2 id="Contact">Contact</h2>
             <table>
                 <tr>
                     <td><a href="https://www.linkedin.com/in/ajbowers-dev/" target="_blank">

@@ -26,7 +26,7 @@ aside {
     background-color: white;
     float: left;
     display: block;
-    width: 45%;
+    width: 40%;
     padding: 5px;
     margin-top: 10px;
     box-sizing: border-box;
@@ -41,7 +41,7 @@ section {
     clear:right;
     display: block;
     margin-top: 2em;
-    width:45%;
+    width:40%;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 3px 3px 3px 3px grey;
@@ -67,7 +67,7 @@ h3 {
 }
 
 p, ul {
-    font-size: 1em;
+    font-size: .875em;
     line-height: 1.5em;
     clear: both;
 }
@@ -76,15 +76,17 @@ td {
     float: left;
     margin-right: 10px;
     text-align: center;
-    
     font-size: 1.875em;
     opacity: 1;
+}
+
+td.img {
+    display: inline;
 }
 
 td:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
-    display: inline;
 }
 
 article {

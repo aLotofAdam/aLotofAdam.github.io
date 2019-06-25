@@ -29,7 +29,7 @@ aside {
     width: 40%;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 9%;
+    margin-left: 8%;
     box-sizing: border-box;
     box-shadow: 3px 3px 3px 3px grey;
     text-align: start;
@@ -44,9 +44,9 @@ section {
     margin-top: 2em;
     width:50%;
     padding: 20px;
-    margin-right: 9%;
+    margin-right: 8%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 3px 5px grey;
+    box-shadow: 3px 3px 3px 3px grey;
     text-align: start;
     border-left: 5px solid rgb(34, 196, 196);
 }
@@ -77,8 +77,14 @@ p, ul {
 td {
     float: left;
     margin-right: 10px;
-    text-align: justify;
+    text-align: center;
     font-size: 1.875em;
+    opacity: 1;
+}
+
+td:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 article {

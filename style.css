@@ -5,7 +5,7 @@ body {
 }
 
 header, footer {
-    background-color: rgb(148, 224, 224);
+    background-color: rgb(34, 196, 196);
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -26,14 +26,14 @@ aside {
     background-color: white;
     float: left;
     display: block;
-    width: 30%;
+    width: 40%;
     padding: 5px;
     margin-top: 10px;
     margin-left: 9%;
     box-sizing: border-box;
-    box-shadow: 4px 4px 4px 5px grey;
+    box-shadow: 3px 3px 3px 3px grey;
     text-align: start;
-    border-left: 5px solid rgb(148, 224, 224);
+    border-left: 5px solid rgb(34, 196, 196);
 }
 
 section {
@@ -41,14 +41,14 @@ section {
     float:right;
     clear:right;
     display: block;
-    margin-top: 10px;
+    margin-top: 2em;
     width:50%;
     padding: 20px;
     margin-right: 9%;
     box-sizing: border-box;
-    box-shadow: 4px 4px 4px 5px grey;
+    box-shadow: 3px 3px 3px 5px grey;
     text-align: start;
-    border-left: 5px solid rgb(148, 224, 224);
+    border-left: 5px solid rgb(34, 196, 196);
 }
 
 .icon {
@@ -74,13 +74,15 @@ p, ul {
     clear: both;
 }
 
-nav {
-    text-align: center;
+td {
+    float: left;
+    margin-right: 10px;
+    text-align: justify;
     font-size: 1.875em;
 }
 
 article {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
 }
 
 .info-container {

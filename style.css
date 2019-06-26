@@ -2,37 +2,38 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 100%;
     background-color: rgb(235, 235, 235);
+    width: 100%;
+    text-align: center;
 }
 
-header, footer {
-    background-color: rgb(34, 196, 196);
-    padding: 20px;
-    width: 100%;
+header {
+    background-color: rgb(17, 177, 177);
+    padding: 15px;
+    /*box-sizing: border-box;*/
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(17, 177, 177);
+    padding: 5px;
+    /*box-sizing: border-box;*/
     box-sizing: border-box;
     text-align: center;
     clear: both;
-}
-
-.main-content {
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    box-sizing: border-box;
 }
 
 aside {
     background-color: white;
     float: left;
     display: block;
-    width: 40%;
+    width: 30%;
     padding: 5px;
-    margin-top: 10px;
+    margin: 1.5em .875em 0em 3em;
     box-sizing: border-box;
     box-shadow: 3px 3px 3px 3px grey;
     text-align: start;
-    border-left: 5px solid rgb(34, 196, 196);
+    border-left: 5px solid rgb(17, 177, 177);
 }
 
 section {
@@ -40,18 +41,13 @@ section {
     float:right;
     clear:right;
     display: block;
-    margin-top: 2em;
-    width:40%;
+    margin: 1.5em 3em 0em .875em;
+    width:55%;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 3px 3px 3px 3px grey;
     text-align: start;
-    border-left: 5px solid rgb(34, 196, 196);
-}
-
-.icon {
-    margin-right: 5px;
-    position: relative;
+    border-left: 5px solid rgb(17, 177, 177);
 }
 
 h1 {
@@ -67,24 +63,60 @@ h3 {
 }
 
 p, ul {
-    font-size: .875em;
+    font-size: 1em;
     line-height: 1.5em;
     clear: both;
 }
 
+table {
+    width: 100%;
+}
+
 td {
-    float: left;
-    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    
     text-align: center;
     font-size: 1.875em;
     opacity: 1;
+
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 25%;
+
+    /*margin-right: 10px;
+    margin-left: 10px;*/
 }
 
-td.img {
-    display: inline;
+td::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 td:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 33.33%;
+}
+  
+/* Clear floats after image containers */
+.center::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
@@ -93,10 +125,22 @@ article {
     border-bottom: 1px solid lightgrey;
 }
 
-.info-container {
-    float:right;
+#work.li {
+    list-style-image: url(/icons/baseline-work-24px.svg);
 }
 
-img {
-    max-width: 50%;
+#home.li {
+    list-style-image: url(/icons/baseline-home-24px.svg);
+}
+
+#education.li {
+    list-style-image: url(/icons/baseline-school-24px.svg);
+}
+
+#email.li {
+    list-style-image: url(/icons/baseline-email-24px.svg);
+}
+
+.info-container.img {
+    max-width: 100%;
 }

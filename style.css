@@ -105,7 +105,7 @@ td:hover {
     margin-left: auto;
     margin-right: auto;
     float: left;
-    width: 64px;
+    width: 33.33%;
 }
   
 /* Clear floats after image containers */
@@ -124,19 +124,19 @@ article {
     border-bottom: 1px solid lightgrey;
 }
 
-#work.li {
+li#work {
     list-style-image: url("/icons/baseline-work-24px.svg");
 }
 
-#home.li {
+li#home {
     list-style-image: url("/icons/baseline-home-24px.svg");
 }
 
-#education.li {
+li#education {
     list-style-image: url("/icons/baseline-school-24px.svg");
 }
 
-#email.li {
+li#email {
     list-style-image: url("/icons/baseline-email-24px.svg");
 }
 

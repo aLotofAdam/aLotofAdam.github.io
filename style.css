@@ -3,13 +3,13 @@ body {
     font-size: 100%;
     background-color: rgb(235, 235, 235);
     width: 100%;
+    margin: 0;
     text-align: center;
 }
 
 header {
     background-color: rgb(17, 177, 177);
     padding: 15px;
-    /*box-sizing: border-box;*/
     box-sizing: border-box;
     text-align: center;
 }
@@ -17,7 +17,6 @@ header {
 footer {
     background-color: rgb(17, 177, 177);
     padding: 5px;
-    /*box-sizing: border-box;*/
     box-sizing: border-box;
     text-align: center;
     clear: both;
@@ -106,7 +105,7 @@ td:hover {
     margin-left: auto;
     margin-right: auto;
     float: left;
-    width: 33.33%;
+    width: 64px;
 }
   
 /* Clear floats after image containers */
@@ -126,19 +125,23 @@ article {
 }
 
 #work.li {
-    list-style-image: url(/icons/baseline-work-24px.svg);
+    list-style-image: url("/icons/baseline-work-24px.svg");
 }
 
 #home.li {
-    list-style-image: url(/icons/baseline-home-24px.svg);
+    list-style-image: url("/icons/baseline-home-24px.svg");
 }
 
 #education.li {
-    list-style-image: url(/icons/baseline-school-24px.svg);
+    list-style-image: url("/icons/baseline-school-24px.svg");
 }
 
 #email.li {
-    list-style-image: url(/icons/baseline-email-24px.svg);
+    list-style-image: url("/icons/baseline-email-24px.svg");
+}
+
+.info-container {
+    width: 100%;
 }
 
 .info-container.img {

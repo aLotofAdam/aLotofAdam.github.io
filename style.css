@@ -1,5 +1,45 @@
-body {
+* {box-sizing: border-box;}
+.col-half {width: 4.165%;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hRow { 
+    background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
+    text-align: start;
+}
+
+.hRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
     font-family: Helvetica, sans-serif;
+}
+
+body {
     font-size: 100%;
     background-color: rgb(235, 235, 235);
     width: 100%;
@@ -9,47 +49,51 @@ body {
 
 header {
     background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
-    padding: 15px;
-    box-sizing: border-box;
-    text-align: center;
+    padding: 5px;
+    text-align: start;
+    width: 100%;
+    display: block;
+    margin: auto;
+    color: rgb(172, 47, 184);
+    line-height: .5em;
 }
 
 footer {
     background-image: linear-gradient(to right, rgb(29, 230, 230), rgb(14, 218, 133));
     padding: 5px;
-    box-sizing: border-box;
     text-align: center;
-    clear: both;
     width: 100%;
     display: block;
     margin: auto;
 }
 
-aside {
+section {
     background-color: white;
-    float: left;
-    display: block;
-    width: 30%;
-    padding: 5px;
-    margin: 1.5em .875em 0em 3em;
-    box-sizing: border-box;
+    padding: 20px;
     box-shadow: 3px 3px 3px 3px grey;
     text-align: start;
     border-left: 5px solid rgb(17, 177, 177);
 }
 
-section {
+.container {
     background-color: white;
-    float:right;
-    clear:right;
-    display: block;
-    margin: 1.5em 3em 0em .875em;
-    width:55%;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 5px;
+    margin: 1.5em .875em 0em 3em;
     box-shadow: 3px 3px 3px 3px grey;
-    text-align: start;
     border-left: 5px solid rgb(17, 177, 177);
+    text-align: justify;
+}
+
+.col1 {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col2 {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -78,10 +122,26 @@ h4{
     margin: auto;
 }
 
-p, ul {
+h5, h6 {
+    font-size: 3.5em;
+    color: white;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+h6 {
+    color: lightslategrey;
+}
+
+ul {
     font-size: 1em;
     line-height: 1.5em;
-    
+    background: white;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 table {
@@ -89,7 +149,6 @@ table {
 }
 
 td {
-    box-sizing: border-box;
     padding: 10px;
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
@@ -100,11 +159,6 @@ td {
 
     margin-left: auto;
     margin-right: auto;
-    float: left;
-    width: 25%;
-
-    /*margin-right: 10px;
-    margin-left: 10px;*/
 }
 
 td::after {
@@ -118,35 +172,6 @@ td:hover {
     filter: alpha(opacity=50);
 }
 
-.centered1 {
-
-    display: block;
-    float: left;
-
-    margin-left: 40%;
-    margin-right: 5px;
-}
-
-.centered2{
-
-    display: block;
-    float: left;
-
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.centered3 {
-
-    display: block;
-    float: left;
-
-    margin-left: 5px;
-    margin-right: 40%;
-}
-
-
-  
 /* Clear floats after image containers */
 .center::after {
     content: "";
@@ -157,32 +182,30 @@ td:hover {
 .center:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
-}
-
-article {
-    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    top: 2px;
 }
 
 li#work {
-    fill: rgb(17, 177, 177);
     list-style-image: url("/icons/baseline-work-24px.svg");
+  
 }
 
 li#home {
-    fill: rgb(17, 177, 177);
     list-style-image: url("/icons/baseline-home-24px.svg");
+  
 }
 
 li#education {
-    fill: rgb(17, 177, 177);
     list-style-image: url("/icons/baseline-school-24px.svg");
+
 }
 
 li#email {
-    fill: rgb(17, 177, 177);
     list-style-image: url("/icons/baseline-email-24px.svg");
-}
 
+}
+/*
 .info-container {
     width: 100%;
 }
@@ -190,27 +213,8 @@ li#email {
 .info-container.img {
     max-width: 100%;
 }
-
+*/
 .relative {
     position: relative;
-    bottom: 8px;
-}
-
-.container {
-    width: 100%;
-    display: block;
-    
-    text-align: justify;
-}
-
-.col1 {
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.col2 {
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 15px;
 }

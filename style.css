@@ -209,8 +209,9 @@ td:hover {
 ul.arrow li {
     background: url("/icons/baseline-arrow_right-24px.svg") no-repeat left top; /* <-- change `left` & `top` too for extra control */
     /* reset styles (optional): */
+    padding-right: 5px;
+    padding-top: 2px;
     list-style-position: outside;
-    margin-right: auto;
   }
 
 li#work {

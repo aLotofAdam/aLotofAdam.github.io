@@ -187,11 +187,7 @@ td:hover {
     filter: alpha(opacity=50);
 }
 
-.info-container.img {
-    max-width: 100%;
-}
-
-.info-container .img:hover {
+.pic:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
@@ -210,6 +206,14 @@ td:hover {
     margin-top: 2px;
 }
 
+li {
+    background: url("/icons/baseline-arrow_right-24px.svg") no-repeat left top; /* <-- change `left` & `top` too for extra control */
+    padding: 3px 0px 3px 10px;
+    /* reset styles (optional): */
+    list-style: none;
+    margin: 0;
+  }
+
 li#work {
     list-style-image: url("/icons/baseline-work-24px.svg");
 }
@@ -225,7 +229,7 @@ li#education {
 li#email {
     list-style-image: url("/icons/baseline-email-24px.svg");
 }
-
+/*
 ul.one li {
     list-style-image: url("/icons/baseline-arrow_right-24px.svg");
 }
@@ -241,12 +245,9 @@ ul.three li {
 ul.four li {
     list-style-image: url("/icons/round-arrow_right-24px.svg");
 }
-/*
-.info-container {
-    width: 100%;
-}
 */
+
 .relative {
+    text-align: justify;
     position: relative;
-    padding: 15px;
 }

@@ -87,6 +87,7 @@ footer, .top-footer {
     text-align: start;
     margin-bottom: auto;
     box-shadow: 3px 3px 3px 3px grey;
+    border-top: 2px solid black;
     border-left: 5px solid rgb(17, 177, 177);
 }
 
@@ -96,6 +97,7 @@ footer, .top-footer {
     padding: 15px;
     box-shadow: 3px 3px 3px 0 grey;
     text-align: start;
+    border-top: 2px solid black;
     border-left: 5px solid rgb(17, 177, 177);
     margin-bottom: auto;
 }
@@ -219,19 +221,19 @@ li#email {
     list-style-image: url("/icons/baseline-email-24px.svg");
 }
 
-ul#one {
+ul.one {
     list-style-image: url("/icons/baseline-arrow_right-24px.svg");
 }
 
-ul#two {
+ul.two {
     list-style-image: url("/icons/baseline-keyboard_arrow_right-24px.svg");
 }
 
-ul#three {
+ul.three {
     list-style-image: url("/icons/baseline-subdirectory_arrow_right-24px.svg");
 }
 
-ul#four {
+ul.four {
     list-style-image: url("/icons/round-arrow_right-24px.svg");
 }
 /*

@@ -1,0 +1,216 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(29, 230, 230), rgb(14, 218, 133));
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-color: white;
+    float: left;
+    display: block;
+    width: 30%;
+    padding: 5px;
+    margin: 1.5em .875em 0em 3em;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px grey;
+    text-align: start;
+    border-left: 5px solid rgb(17, 177, 177);
+}
+
+section {
+    background-color: white;
+    float:right;
+    clear:right;
+    display: block;
+    margin: 1.5em 3em 0em .875em;
+    width:55%;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px grey;
+    text-align: start;
+    border-left: 5px solid rgb(17, 177, 177);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.875em;
+    clear: both;
+}
+
+h3 {
+    font-size: 1.25em;
+    clear: both;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+h4{
+    font-size: 1em;
+    clear: both;
+    margin: auto;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.5em;
+    
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    
+    text-align: center;
+    font-size: 1.875em;
+    opacity: 1;
+
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 25%;
+
+    /*margin-right: 10px;
+    margin-left: 10px;*/
+}
+
+td::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+td:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.centered1 {
+
+    display: block;
+    float: left;
+
+    margin-left: 40%;
+    margin-right: 5px;
+}
+
+.centered2{
+
+    display: block;
+    float: left;
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.centered3 {
+
+    display: block;
+    float: left;
+
+    margin-left: 5px;
+    margin-right: 40%;
+}
+
+
+  
+/* Clear floats after image containers */
+.center::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+article {
+    border-bottom: 1px solid lightgrey;
+}
+
+li#work {
+    fill: rgb(17, 177, 177);
+    list-style-image: url("/icons/baseline-work-24px.svg");
+}
+
+li#home {
+    fill: rgb(17, 177, 177);
+    list-style-image: url("/icons/baseline-home-24px.svg");
+}
+
+li#education {
+    fill: rgb(17, 177, 177);
+    list-style-image: url("/icons/baseline-school-24px.svg");
+}
+
+li#email {
+    fill: rgb(17, 177, 177);
+    list-style-image: url("/icons/baseline-email-24px.svg");
+}
+
+.info-container {
+    width: 100%;
+}
+
+.info-container.img {
+    max-width: 100%;
+}
+
+.relative {
+    position: relative;
+    bottom: 8px;
+}
+
+.container {
+    width: 100%;
+    display: block;
+    
+    text-align: justify;
+}
+
+.col1 {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col2 {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}

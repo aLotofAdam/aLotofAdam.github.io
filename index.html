@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJ | Developer</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-    <div class="row">
-        <header>
-            <img src="/icons/ajdevIcon.png" alt="ajdev Icon">
-            <!--<nav id="top">
+    <nav id="top">
+        <img src="/icons/ajdevIcon.png" alt="ajdev Icon">
+        <!--
                 <table>
                     <tr>
                         <td class="h-center"><a href="https://ajbowers.dev/index">Home</a></td>
@@ -20,173 +20,175 @@
                         <td class="h-center"><a href="https://ajbowers.dev/blogs">Blogs</a></td>
                     </tr>
                 </table>
-            </nav>-->
-        </header>
-    </div>
-    <div class="hRow">
-        <div class="col-2"></div>
-        <div class="col-7">
+            -->
+    </nav>
+    <header>
+        <div class="intro-box">
             <p>Hi, my name is</p>
-            <h5 id="AboutMe">Adam Bowers.</h5>
-            <h6>I'm a Software Developer.</h6>
+            <h1>Adam Bowers.</h1>
+            <h5>I'm a Software Developer.</h5>
             <p>I'm a recently graduated computer science major who is well-versed in agile software development
                 methods. I am quick to take ownership and learn new
                 technologies that arise.</p>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-4">
+        <div class="about-box">
             <div class="info-container" style="max-width:100%">
                 <img src="/icons/headshot.jpg" style="width:100%" alt="Profile Picture">
             </div>
-            <section>
-                <ul class="relative">
-                    <li id="work">Software Developer</li>
-                    <li id="home">Winston-Salem, North Carolina</li>
-                    <li id="education">UNCG</li>
-                    <li id="email"><a href="mailto:ajbowers.dev@outlook.com">ajbowers.dev@outlook.com</a></li>
-                </ul>
-            </section>
+            <ul class="relative">
+                <li id="work">Software Developer</li>
+                <li id="home">Winston-Salem, North Carolina</li>
+                <li id="education">B.S. in Computer Science</li>
+                <li id="email"><a href="mailto:ajbowers.dev@outlook.com">ajbowers.dev@outlook.com</a></li>
+            </ul>
         </div>
-        <div class="col-4">
-            <section>
-                <h2 id="Education">Education</h2>
-                <h2>University of North Carolina at Greensboro</h2>
-                <p>Graduated May 2019 with a Bachelor of Science in Computer Science degree.</p>
-                <h2>Forsyth Technical Community College</h2>
-                <p>Graduated December 2016 with an Associate in Science degree.</p>
-            </section>
+    </header>
+    <br>
+    <div class="flex-container">
+        <div class="skills-box">
+            <h3>Skills & Programming Languages:</h3>
+            <div class="child-flex-container">
+                <div class="col1">
+                    <ul class="one">
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul class="one">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SQL</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-            <section>
-                <h3>Hobbies:</h3>
-                <ul class="col1">
-                    <li>Cooking</li>
-                    <li>Podcasts</li>
-                    <li>Coffee</li>
-                    <li>Reading</li>
-                </ul>
-                <ul class="col2">
-                    <li>Science Fiction</li>
-                    <li>Running 5Ks</li>
-                    <li>Japanese Language</li>
-                    <li>Video Games</li>
-                </ul>
-            </section>
+        <div class="skills-box">
+            <h3>Tools & Platforms:</h3>
+            <div class="child-flex-container">
+                <div class="col1">
+                    <ul class="two">
+                        <li>Visual Studio Code</li>
+                        <li>Android Studio</li>
+                        <li>Jupyter Notebook</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul class="two">
+                        <li>Git</li>
+                        <li>Ubuntu</li>
+                        <li>VMware</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+    <br>
+    <div class="flex-container">
+        <div class="skills-box">
+            <h3>Hobbies:</h3>
+            <div class="child-flex-container">
+                <div class="col1">
+                    <ul class="three">
+                        <li>Cooking</li>
+                        <li>Podcasts</li>
+                        <li>Coffee</li>
+                        <li>Reading</li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul class="three">
+                        <li>Science Fiction</li>
+                        <li>Running 5Ks</li>
+                        <li>Japanese Language</li>
+                        <li>Video Games</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills-box">
+            <h3>Knowledge Domain & Soft Skills:</h3>
+            <div class="child-flex-container">
+                <div class="col1">
+                    <ul class="four">
+                        <li>Agile Methods</li>
+                        <li>OOP</li>
+                        <li>SDLC</li>
+                        <li>SOLID Principles</li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul class="four">
+                        <li>Adaptable</li>
+                        <li>Optimistic</li>
+                        <li>Analytical</li>
+                        <li>Collaborative</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="flex-container">
+        <div class="project-box">
+            <h2 id="Projects">Projects</h2>
+            <h3>Edesia: Meal Planning and Recipe Application</h3>
+            <ul>
+                <li><b>Goal:</b> To create a user-friendly and
+                    intuitive meal planning app for the Android
+                    mobile platform.</li>
+                <li><b>Tech Stack:</b> Java, Android Studio,
+                    SQLite, GitHub with ZenHub.</li>
+                <li><b>Responsibilities:</b> Front-end developer;
+                    Product designer; Scrum master.
+                    <ul>
+                        <li>As a front-end developer, I worked on creating GUIs,
+                            features for the user's grocery list, and implemented
+                            Google's Cloud Vision API in order to use an
+                            OCR (optical character reader). I also developed the
+                            navigation components for the app. </li>
+                        <li>As the product designer, I planned the main features and
+                            researched various software to help develop solutions towards
+                            implementing those features. I also designed the overall system
+                            architecture and detailed how different subsystems should
+                            communicate and interact with one-another.</li>
+                        <li>As the scrum master, I lead weekly scrum meetings for my team.
+                            We used agile methods with GitHub to prioritize our weekly sprints.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="top-footer">
+        <h2 id="Contact">Contact</h2>
+    </div>
+    <footer>
+        <div class="col-1">
+            <a href="https://www.linkedin.com/in/ajbowers-dev/" target="_blank">
+                <img src="/icons/linkedin64.svg" style="max-width:64px" alt="LinkedIn Icon" class="center"></a>
+        </div>
+        <div class="col-1">
+            <a href="https://github.com/aLotofAdam" target="_blank">
+                <img src="/icons/github64.svg" style="max-width:64px" alt="Github Icon" class="center"></a>
+        </div>
+        <div class="col-1">
+            <a href="https://twitter.com/alotofAdam" target="_blank">
+                <img src="/icons/twitter64.svg" style="max-width:64px" alt="Twitter Icon" class="center"></a>
+        </div>
+    </footer>
+    <footer>
+        <a href='#top'>
+            <h4>To Top of Page</h4>
+        </a>
 
-    <div class="row">
-        <div class="col-4">
-            <div class="container">
-                <h3>Skills & Programming Languages:</h3>
-                <ul class="col1">
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                </ul>
-                <ul class="col2">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                    <li>PHP</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="container">
-                <h3>Tools & Platforms:</h3>
-                <ul class="col1">
-                    <li>Visual Studio Code</li>
-                    <li>Android Studio</li>
-                    <li>Jupyter Notebook</li>
-                    <li>MySQL</li>
-                </ul>
-                <ul class="col2">
-                    <li>Git</li>
-                    <li>Ubuntu</li>
-                    <li>VMware</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
-        <div class="col-4">
-            <div class="container">
-                <h3>Knowledge Domain & Soft Skills:</h3>
-                <ul class="col1">
-                    <li>Agile Methods</li>
-                    <li>OOP</li>
-                    <li>SDLC</li>
-                    <li>SOLID Principles</li>
-                </ul>
-                <ul class="col2">
-                    <li>Adaptable</li>
-                    <li>Optimistic</li>
-                    <li>Analytical</li>
-                    <li>Collaborative</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <section>
-                <h2 id="Projects">Projects</h2>
-                <h3>Edesia: Meal Planning and Recipe Application</h3>
-                <ul>
-                    <li><b>Goal:</b> To create a user-friendly and
-                        intuitive meal planning app for the Android
-                        mobile platform.</li>
-                    <li><b>Tech Stack:</b> Java, Android Studio,
-                        SQLite, GitHub with ZenHub.</li>
-                    <li><b>Responsibilities:</b> Front-end developer;
-                        Product designer; Scrum master.
-                        <ul>
-                            <li>As a front-end developer, I worked on creating GUIs,
-                                features for the user's grocery list, and implemented
-                                Google's Cloud Vision API in order to use an
-                                OCR (optical character reader). I also developed the
-                                navigation components for the app. </li>
-                            <li>As the product designer, I planned the main features and
-                                researched various software to help develop solutions towards
-                                implementing those features. I also designed the overall system
-                                architecture and detailed how different subsystems should
-                                communicate and interact with one-another.</li>
-                            <li>As the scrum master, I lead weekly scrum meetings for my team.
-                                We used agile methods with GitHub to prioritize our weekly sprints.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </div>
-
-    <div class="row">
-        <footer>
-            <h2 id="Contact">Contact</h2>
-            <div class="col-1"></div>
-            <div class="col-3"></div>
-            <div class="col-1">
-                <a href="https://www.linkedin.com/in/ajbowers-dev/" target="_blank">
-                    <img src="/icons/linkedin64.svg" style="max-width:64px" alt="LinkedIn Icon" class="center"></a>
-            </div>
-            <div class="col-1">
-                <a href="https://github.com/aLotofAdam" target="_blank">
-                    <img src="/icons/github64.svg" style="max-width:64px" alt="Github Icon" class="center"></a>
-            </div>
-            <div class="col-1">
-                <a href="https://twitter.com/alotofAdam" target="_blank">
-                    <img src="/icons/twitter64.svg" style="max-width:64px" alt="Twitter Icon" class="center"></a>
-            </div>
-            <div class="col-3"></div>
-            <div class="col-1"></div>
-            <a href='#top'>
-                <h4>To Top of Page</h4>
-            </a>
-        </footer>
-    </div>
+    </footer>
     <!--<script src="script.js"></script>-->
 </body>
+
 </html>

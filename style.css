@@ -1,0 +1,249 @@
+* {box-sizing: border-box;}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    font-size: 100%;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
+    padding: 10px;
+    flex-flow: row nowrap;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
+    padding: 5px;
+    text-align: start;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    color: grey;
+    line-height: .5em;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+    box-shadow: 0 3px 3px grey;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.child-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+footer, .top-footer {
+    background-image: linear-gradient(to right, rgb(29, 230, 230), rgb(14, 218, 133));
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.top-footer {
+    box-shadow: -3px 0 3px 5px grey;
+}
+
+.skills-box {
+    width: 35%;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: start;
+    margin-bottom: auto;
+    box-shadow: 3px 3px 3px 3px grey;
+    border-left: 5px solid rgb(17, 177, 177);
+}
+
+.project-box {
+    width: 80%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 3px 3px 0 grey;
+    text-align: start;
+    border-left: 5px solid rgb(17, 177, 177);
+    margin-bottom: auto;
+}
+
+.intro-box {
+    width: 50%;
+}
+
+.about-box {
+    width: 30%;
+}
+
+.col1, .col2 {
+    text-align: justify;
+    width: 50%;
+}
+
+/*intro-box*/
+h1 {
+    font-size: 3.5em;
+    color: white;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+/*intro-box subtitle*/
+h5 {
+    font-size: 2.5em;
+    color: lightslategrey;;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+/*projects, contact*/
+h2 {
+    font-size: 1.875em;
+    border-bottom: 1px solid lightgrey;
+    margin: auto;
+}
+
+/*skills-box, project subtitle*/
+h3 {
+    font-size: 1.25em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid lightgrey;
+    margin: 0;
+    text-align: justify;
+}
+
+/*link #top*/
+h4{
+    font-size: 1em;
+    margin: auto;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    
+    text-align: center;
+    font-size: 1.875em;
+    opacity: 1;
+
+    margin-top: auto;
+    margin-right: auto;
+}
+
+td::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+td:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.center {
+    margin-top: auto;
+}
+
+/* Clear floats after image containers */
+.center::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    top: 2px;
+}
+
+li#work {
+    list-style-image: url("/icons/baseline-work-24px.svg");
+}
+
+li#home {
+    list-style-image: url("/icons/baseline-home-24px.svg");
+}
+
+li#education {
+    list-style-image: url("/icons/baseline-school-24px.svg");
+}
+
+li#email {
+    list-style-image: url("/icons/baseline-email-24px.svg");
+}
+
+ul#one {
+    list-style-image: url("/icons/baseline-arrow_right-24px.svg");
+}
+
+ul#two {
+    list-style-image: url("/icons/baseline-keyboard_arrow_right-24px.svg");
+}
+
+ul#three {
+    list-style-image: url("/icons/baseline-subdirectory_arrow_right-24px.svg");
+}
+
+ul#four {
+    list-style-image: url("/icons/round-arrow_right-24px.svg");
+}
+/*
+.info-container {
+    width: 100%;
+}
+
+.info-container.img {
+    max-width: 100%;
+}
+*/
+.relative {
+    position: relative;
+    padding: 15px;
+}

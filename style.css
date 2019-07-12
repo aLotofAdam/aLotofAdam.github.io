@@ -103,11 +103,11 @@ footer, .top-footer {
 }
 
 .intro-box {
-    width: 50%;
+    width: 80%;
 }
 
 .about-box {
-    width: 25%;
+    width: 50%;
 }
 
 .col1, .col2 {
@@ -149,7 +149,7 @@ h3 {
 }
 
 /*link #top*/
-h4{
+h4 {
     font-size: 1em;
     margin: auto;
 }
@@ -187,6 +187,11 @@ td:hover {
     filter: alpha(opacity=50);
 }
 
+nav img {
+    width: 100%;
+    height: auto;
+}
+
 .pic {
     width: 100%;
     height: auto;
@@ -216,7 +221,19 @@ ul.arrow li {
     padding-left: 10px;
     margin-right: -10px;
     list-style: none;
-  }
+}
+
+ul.nested li {
+    background: url("/icons/baseline-keyboard_arrow_right-24px.svg") no-repeat -10px 0;
+    padding-left: 10px;
+    margin-right: -10px;
+    list-style: none;
+}
+
+ul.relative li {
+    text-align: justify;
+    position: relative;
+}
 
 li#work {
     list-style-image: url("/icons/baseline-work-24px.svg");
@@ -251,14 +268,9 @@ ul.four li {
 }
 */
 
-.relative {
-    text-align: justify;
-    position: relative;
-}
-
 /*when screen is < 700px wide, stack columns*/
 @media screen and (max-width: 700px) {
-    .flex-container, .skills-box, .child-flex-container, .project-box {
+    .about-box, .flex-container, .skills-box, .child-flex-container, .project-box {
         flex-flow: column wrap;
         width: 100%;
     }

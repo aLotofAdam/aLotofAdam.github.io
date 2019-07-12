@@ -11,7 +11,7 @@
 
 <body>
     <nav id="top">
-        <img src="/icons/ajdevIcon.png" alt="ajdev Icon" style="width:32px;height:32px;">
+        <img src="/icons/ajdevIcon.png" alt="ajdev Icon" style="max-width:32px;max-height:32px;">
         <!--
                 <table>
                     <tr>
@@ -32,17 +32,40 @@
                 methodologies. I am quick to take ownership and learn new
                 technologies that arise.</p>
         </div>
+    </header>
+    <br>
+    <div class="flex-container">
         <div class="about-box">
-            <img src="/icons/headshot.jpg" style="width:200px;height:200px;" alt="Profile Picture" class="pic">
+            <img src="/icons/headshot.jpg" style="max-width:200px;max-height:200px;" alt="Profile Picture" class="pic">
             <ul class="relative">
                 <li id="work">Software Developer</li>
                 <li id="home">Winston-Salem, North Carolina</li>
                 <li id="education">B.S. in Computer Science</li>
                 <li id="email"><a href="mailto:ajbowers.dev@outlook.com">ajbowers.dev@outlook.com</a></li>
             </ul>
+            <div class="skills-box">
+                <h3>Hobbies:</h3>
+                <div class="child-flex-container">
+                    <div class="col1">
+                        <ul class="arrow">
+                            <li>Cooking</li>
+                            <li>Podcasts</li>
+                            <li>Coffee</li>
+                            <li>Reading</li>
+                        </ul>
+                    </div>
+                    <div class="col2">
+                        <ul class="arrow">
+                            <li>Science Fiction</li>
+                            <li>Running 5Ks</li>
+                            <li>Japanese Language</li>
+                            <li>Video Games</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <br>
+    </div>
     <div class="flex-container">
         <div class="skills-box">
             <h3>Skills & Programming Languages:</h3>
@@ -90,27 +113,6 @@
     <br>
     <div class="flex-container">
         <div class="skills-box">
-            <h3>Hobbies:</h3>
-            <div class="child-flex-container">
-                <div class="col1">
-                    <ul class="arrow">
-                        <li>Cooking</li>
-                        <li>Podcasts</li>
-                        <li>Coffee</li>
-                        <li>Reading</li>
-                    </ul>
-                </div>
-                <div class="col2">
-                    <ul class="arrow">
-                        <li>Science Fiction</li>
-                        <li>Running 5Ks</li>
-                        <li>Japanese Language</li>
-                        <li>Video Games</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="skills-box">
             <h3>Knowledge Domain & Soft Skills:</h3>
             <div class="child-flex-container">
                 <div class="col1">
@@ -145,7 +147,7 @@
                     SQLite, GitHub with ZenHub.</li>
                 <li><b>Responsibilities:</b> Front-end developer;
                     Product designer; Scrum master.
-                    <ul>
+                    <ul class="nested">
                         <li>As a front-end developer, I worked on creating GUIs,
                             features for the user's grocery list, and implemented
                             Google's Cloud Vision API in order to use an

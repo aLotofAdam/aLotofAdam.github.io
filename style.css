@@ -47,6 +47,14 @@ header {
     box-shadow: 0 3px 3px grey;
 }
 
+.flex-container-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -270,7 +278,7 @@ ul.four li {
 
 /*when screen is < 700px wide, stack columns*/
 @media screen and (max-width: 700px) {
-    .about-box, .flex-container, .skills-box, .child-flex-container, .project-box {
+    .about-box, .flex-container-1, .flex-container, .skills-box, .child-flex-container, .project-box {
         flex-flow: column wrap;
         width: 100%;
     }

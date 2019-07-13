@@ -47,20 +47,42 @@ header {
     box-shadow: 0 3px 3px grey;
 }
 
-.flex-container-1 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
 .flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
+}
+
+.about-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    box-shadow: 3px 3px 0px 0px grey;
+    border-top: 2px solid rgb(20, 196, 196);
+    border-left: 5px solid rgb(17, 177, 177);
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: start;
+}
+
+.about-container-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    box-shadow: 3px 3px 0px 0px grey;
+    border-left: 5px solid rgb(17, 177, 177);
+    background-color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 .child-flex-container {
@@ -81,6 +103,7 @@ footer, .top-footer {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    color: white;
 }
 
 .top-footer {
@@ -94,7 +117,7 @@ footer, .top-footer {
     padding-right: 10px;
     text-align: start;
     margin-bottom: auto;
-    box-shadow: 3px 3px 3px 0 grey;
+    box-shadow: 3px 3px 0px 0px grey;
     border-top: 2px solid rgb(20, 196, 196);
     border-left: 5px solid rgb(17, 177, 177);
 }
@@ -102,8 +125,8 @@ footer, .top-footer {
 .project-box {
     width: 80%;
     background-color: white;
-    padding: 15px;
-    box-shadow: 3px 3px 3px 0 grey;
+    padding: 20px;
+    box-shadow: 3px 3px 0px 0px grey;
     text-align: start;
     border-top: 2px solid rgb(20, 196, 196);
     border-left: 5px solid rgb(17, 177, 177);
@@ -112,28 +135,6 @@ footer, .top-footer {
 
 .intro-box {
     width: 80%;
-}
-
-.about-box {
-    max-width: 200px;
-    max-height: 200px;
-    box-shadow: 3px 0 3px 0 grey;
-    border-top: 2px solid rgb(20, 196, 196);
-    border-left: 5px solid rgb(17, 177, 177);
-    border-bottom: 1px solid black;
-}
-
-.about-box-1 {
-    width: auto;
-    height: 200px;
-    text-align: start;
-    margin-bottom: auto;
-    box-shadow: 3px 3px 3px 0 grey;
-    background-color: white;
-    border-top: 2px solid rgb(20, 196, 196);
-    border-left: 5px solid rgb(17, 177, 177);
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
 }
 
 .col1, .col2 {
@@ -257,7 +258,7 @@ ul.nested li {
 }
 
 ul.relative li {
-    text-align: justify;
+    text-align: start;
     position: relative;
 }
 
@@ -296,8 +297,22 @@ ul.four li {
 
 /*when screen is < 700px wide, stack columns*/
 @media screen and (max-width: 700px) {
-    .flex-container-1, .flex-container, .skills-box, .child-flex-container, .project-box {
+    .about-container, .child-flex-container {
+        width: 100%;
+        flex-flow: row nowrap;
+    }
+    
+    .about-container-1, .flex-container, .skills-box, .project-box {
         flex-flow: column wrap;
         width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    * {
+        word-wrap: break-word;
     }
 }

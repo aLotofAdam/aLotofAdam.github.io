@@ -45,13 +45,14 @@ header {
     align-items: center;
     align-content: center;
     box-shadow: 0 3px 3px grey;
+    margin-bottom: 2em;
 }
 
 .flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
 }
 
@@ -89,7 +90,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
 }
 
@@ -108,37 +109,44 @@ footer, .top-footer {
 
 .top-footer {
     box-shadow: -3px 0 3px 3px grey;
+    margin-top: 2em;
 }
 
 .skills-box {
-    width: 35%;
+    width: 40%;
     background-color: white;
     padding-left: 10px;
     padding-right: 10px;
     text-align: start;
-    margin-bottom: auto;
     box-shadow: 3px 3px 0px 0px grey;
     border-top: 2px solid rgb(20, 196, 196);
     border-left: 5px solid rgb(17, 177, 177);
+    margin-top: 2em;
 }
 
 .project-box {
     width: 80%;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
+    padding-right: 40px;
     box-shadow: 3px 3px 0px 0px grey;
     text-align: start;
     border-top: 2px solid rgb(20, 196, 196);
     border-left: 5px solid rgb(17, 177, 177);
-    margin-bottom: auto;
+    margin-top: 2em;
 }
 
 .intro-box {
     width: 80%;
+    padding-bottom: 2em;
+}
+
+.intro-box p {
+    margin: 0px;
 }
 
 .col1, .col2 {
-    text-align: justify;
+    text-align: start;
     width: 50%;
 }
 
@@ -172,7 +180,7 @@ h3 {
     padding-bottom: .5em;
     border-bottom: 1px solid lightgrey;
     margin: 0;
-    text-align: justify;
+    text-align: start;
 }
 
 /*link #top*/
@@ -222,6 +230,7 @@ nav img {
 .pic {
     width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 
 .pic:hover {
@@ -257,9 +266,10 @@ ul.nested li {
     list-style: none;
 }
 
-ul.relative li {
+ul.relative {
     text-align: start;
     position: relative;
+    line-height: 2em;
 }
 
 li#work {
@@ -277,26 +287,9 @@ li#education {
 li#email {
     list-style-image: url("/icons/baseline-email-24px.svg");
 }
-/*
-ul.one li {
-    list-style-image: url("/icons/baseline-arrow_right-24px.svg");
-}
 
-ul.two li {
-    list-style-image: url("/icons/baseline-keyboard_arrow_right-24px.svg");
-}
-
-ul.three li {
-    list-style-image: url("/icons/baseline-subdirectory_arrow_right-24px.svg");
-}
-
-ul.four li {
-    list-style-image: url("/icons/round-arrow_right-24px.svg");
-}
-*/
-
-/*when screen is < 700px wide, stack columns*/
-@media screen and (max-width: 700px) {
+/*when screen is < 813px wide, stack columns*/
+@media screen and (max-width: 813px) {
     .about-container, .child-flex-container {
         width: 100%;
         flex-flow: row nowrap;
@@ -305,6 +298,10 @@ ul.four li {
     .about-container-1, .flex-container, .skills-box, .project-box {
         flex-flow: column wrap;
         width: 100%;
+    }
+
+    .about-container, .about-container-1, .skills-box, .project-box {
+        border-right: 1px solid rgb(235, 235, 235);
     }
 
     img {

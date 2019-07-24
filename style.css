@@ -228,9 +228,10 @@ nav img {
 }
 
 .pic {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-top: 20px;
+    margin-left: 40px;
 }
 
 .pic:hover {
@@ -292,7 +293,7 @@ li#email {
 @media screen and (max-width: 813px) {
     .about-container, .child-flex-container {
         width: 100%;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
     }
     
     .about-container-1, .flex-container, .skills-box, .project-box {
@@ -304,7 +305,15 @@ li#email {
         border-right: 1px solid rgb(235, 235, 235);
     }
 
-    img {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h5 {
+        font-size: 2em;
+    }
+
+    img.resize {
         max-width: 100%;
         height: auto;
     }

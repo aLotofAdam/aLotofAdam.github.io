@@ -41,7 +41,7 @@
      id="namedview1980"
      showgrid="false"
      inkscape:zoom="9.8333333"
-     inkscape:cx="12"
+     inkscape:cx="-8.5423729"
      inkscape:cy="12"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
@@ -52,7 +52,7 @@
      fill="none"
      id="path1974" />
   <path
-     d="m 5,15.18 v 4 l 7,3.82 7,-3.82 v -4 L 12,19 Z M 12,5 1,11 12,17 21,12.09 V 19 h 2 v -8 z"
+     d="m 5,16.18 v 4 l 7,3.82 7,-3.82 v -4 L 12,20 Z M 12,6 1,12 12,18 21,13.09 V 20 h 2 v -8 z"
      id="path1976"
      inkscape:connector-curvature="0"
      style="fill:#11b1b1;fill-opacity:1" />

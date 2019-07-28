@@ -17,6 +17,9 @@ nav {
     background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
     padding: 10px;
     flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 nav a {

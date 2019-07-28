@@ -11,7 +11,12 @@
 
 <body>
     <nav id="top">
-        <img src="/icons/ajdevIcon.png" alt="ajdev Icon" style="max-width:32px;max-height:32px;">
+        <img src="/icons/ajdevIcon.png" alt="ajdev Icon" style="max-width:32px;max-height:32px;" class="center">
+        <img src="/icons/github2.svg" alt="GitHub Icon" style="max-width:32px;max-height:32px;" class="center">
+        <img src="/icons/linkedin.svg" alt="LinkedIn Icon" style="max-width:32px;max-height:32px;" class="center">
+        <img src="/icons/twitter.svg" alt="Twitter Icon" style="max-width:32px;max-height:32px;" class="center">
+        <a href="resources/AdamBowersResume.pdf" target="_blank">
+            <button type="button">Resume</button></a>
         <!--
                 <table>
                     <tr>
@@ -28,7 +33,7 @@
             <p>Hi, my name is</p>
             <h1>Adam Bowers.</h1>
             <h5>I'm a Software Developer.</h5>
-            <p>I'm well-versed in object-oriented programming, agile / waterfall methodologies, and the software 
+            <p>I'm well-versed in object-oriented programming, agile / waterfall methodologies, and the software
                 development life cycle.</p>
         </div>
     </header>
@@ -44,7 +49,7 @@
             </ul>
         </div>
         <div class="about-container-1">
-            <p>I'm a software developer who is passionate about my craft. 
+            <p>I'm a software developer who is passionate about my craft.
                 I'm currently learning Javascript and working on this webpage.
                 When I'm not coding, I enjoy listening to podcasts, reading science fiction books,
                 and getting coffee with friends.</p>
@@ -117,33 +122,54 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="flex-container">
+        <h2 id="Projects">Projects</h2>
+        <br>
+    </div>
     <div class="flex-container">
         <div class="project-box">
-            <h2 id="Projects">Projects</h2>
-            <h3>Edesia: Meal Planning and Recipe Application</h3>
+            <h3>❖ Edesia</h3>
             <ul class="arrow">
-                <li><b>Goal:</b> To create a user-friendly and
-                    intuitive meal planning app for the Android
-                    mobile platform.</li>
-                <li><b>Tech Stack:</b> Java, Android Studio,
-                    SQLite, GitHub with ZenHub.</li>
-                <li><b>Responsibilities:</b> Front-end developer;
-                    Product designer; Scrum master.
+                <li>Meal planning and recipe application for the Android platform.
+                    Users can create a profile, search for new recipes to add to their menu,
+                    and manage their grocery lists.</li>
+                <br>
+                <li><b>Tech Stack Used:</b> Built with Java, Android Studio, and SQLite.
+                    OCR implemented from Google's Cloud Vision API.
+                    Sourcetree was used for version control.</li>
+                <br>
+                <li><b>Features:</b>
                     <ul class="nested">
-                        <li>As a front-end developer, I worked on creating GUIs,
-                            features for the user's grocery list, and implemented
-                            Google's Cloud Vision API in order to use an
-                            OCR (optical character reader). I also developed the
-                            navigation components for the app. </li>
-                        <li>As the product designer, I planned the main features and
-                            researched various software to help develop solutions towards
-                            implementing those features. I also designed the overall system
-                            architecture and detailed how different subsystems should
-                            communicate and interact with one-another.</li>
-                        <li>As the scrum master, I lead weekly scrum meetings for my team.
-                            We used agile methods with GitHub to prioritize our weekly sprints.</li>
+                        <li>Simple and intuitive user interface</li>
+                        <li>Database of recipes</li>
+                        <li>User created profile</li>
+                        <li>Users can save, edit, and add new recipes</li>
+                        <li>Customizable filter for recipe search</li>
+                        <li>User managed grocery list</li>
                     </ul>
                 </li>
+            </ul>
+        </div>
+        <div class="project-box">
+            <h3>❖ Online Bookstore Project</h3>
+            <ul class="arrow">
+                <li>Proof-of-concept online bookstore web application.
+                    Uses a simple webpage interface to query and insert data in the database.</li>
+                <br>
+                <li><b>Tech Stack Used:</b> Built with HTML, CSS, PHP, jQuery, and MySQL.
+                    XAMPP was used to test the application on a local web server.</li>
+            </ul>
+        </div>
+        <div class="project-box">
+            <h3>❖ Car Service Help System</h3>
+            <ul class="arrow">
+                <li>Knowledge-based help system designed to deduce possible causes for a car breaking down.</li>
+                <br>
+                <li><b>Tech Stack Used:</b> Prolog was used to make this program.
+                    It was tested using the SWI-Prolog interpreter.
+                    A modified version of Bratko's forward-chaining rule interpreter and Bayesian network interpreter is
+                    used.</li>
             </ul>
         </div>
     </div>

@@ -41,18 +41,36 @@
      inkscape:window-height="986"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="9.8333333"
-     inkscape:cx="12"
-     inkscape:cy="12"
+     inkscape:zoom="27.812867"
+     inkscape:cx="10.005578"
+     inkscape:cy="13.609161"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg6" />
+  <ellipse
+     style="fill:#1159a1;fill-opacity:1"
+     id="path826"
+     cx="12.255526"
+     cy="12.614559"
+     rx="8.4915257"
+     ry="8.1864405" />
   <path
      fill="none"
      d="M0 0h24v24H0V0z"
      id="path2" />
   <path
-     d="M11.71 15.29l2.59-2.59c.39-.39.39-1.02 0-1.41L11.71 8.7c-.63-.62-1.71-.18-1.71.71v5.17c0 .9 1.08 1.34 1.71.71z"
-     id="path4" />
+     d="m 15.587968,12.584532 -2.59,-2.59 c -0.39,-0.39 -1.02,-0.39 -1.41,0 l -2.59,2.59 c -0.62,0.63 -0.18,1.71 0.71,1.71 l 5.17,0 c 0.9,0 1.34,-1.08 0.71,-1.71 z"
+     id="path4"
+     inkscape:connector-curvature="0"
+     style="fill:#11b1b1;fill-opacity:1" />
+  <rect
+     style="fill:#11b1b1;fill-opacity:1;stroke-width:1.41122842"
+     id="rect830"
+     width="1.7078426"
+     height="3.3048015"
+     x="11.451534"
+     y="14.1035"
+     ry="0.29772985"
+     rx="0.21618262" />
 </svg>

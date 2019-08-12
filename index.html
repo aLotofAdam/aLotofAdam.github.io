@@ -10,29 +10,27 @@
 </head>
 
 <body>
-    <nav id="top">
-        <img src="/icons/ajdevIcon.png" alt="ajdev Icon" style="max-width:32px;max-height:32px;" class="jump">
-        <a href="https://github.com/aLotofAdam" target="_blank">
-            <img src="/icons/github2.svg" alt="GitHub Icon" style="max-width:32px;max-height:32px;" class="jump"></a>
-        <a href="https://www.linkedin.com/in/ajbowers-dev/" target="_blank">
-            <img src="/icons/linkedin.svg" alt="LinkedIn Icon" style="max-width:32px;max-height:32px;" class="jump"></a>
-        <a href="https://twitter.com/alotofAdam" target="_blank">
-            <img src="/icons/twitter.svg" alt="Twitter Icon" style="max-width:32px;max-height:32px;" class="jump"></a>
-        <a href="resources/AdamBowersResume.pdf" target="_blank">
-            <button type="button">Resume</button></a>
-    </nav>
     <header>
+        <nav id="top">
+            <img src="/icons/ajdevIcon.png" alt="ajdev Icon" style="max-width:32px;max-height:32px;" class="jump">
+            <a href="#AboutMe">About Me</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+            <a href="resources/AdamBowersResume.pdf" target="_blank"><button type="button">Resume</button></a>
+        </nav>
         <div class="intro-box">
             <p>Hi, my name is</p>
             <h1>Adam Bowers.</h1>
             <h5>I'm a Software Developer.</h5>
-            <p>I'm well-versed in object-oriented programming, agile / waterfall methodologies, and the software
-                development life cycle.</p>
+            <p>I graduated from the University of North Carolina at Greensboro with a
+                Bacholar of Science in Computer Science in May 2019.</p>
         </div>
     </header>
 
     <div class="flex-container">
-        <div class="about-container">
+
+        <div class="about-container" id="AboutMe">
+            <h2>About Me</h2>
             <img src="/icons/headshot.jpg" style="max-width:200px;max-height:200px;" alt="Profile Picture" class="pic">
             <ul class="relative">
                 <li id="work">Software Developer</li>
@@ -40,135 +38,174 @@
                 <li id="education">B.S. in Computer Science</li>
                 <li id="email"><a href="mailto:ajbowers.dev@outlook.com">ajbowers.dev@outlook.com</a></li>
             </ul>
-        </div>
-        <div class="about-container-1">
-            <p>I'm a software developer who is passionate about my craft.
-                I'm currently learning Javascript and working on this webpage.
-                When I'm not coding, I enjoy listening to podcasts, reading science fiction books,
-                and getting coffee with friends.</p>
+            <div class="column">
+                <p>I'm a software developer with a passion for my craft. I'm currently learning Javascript and
+                    working on this webpage.
+                    When I'm not coding, I enjoy listening to podcasts, reading science fiction books,
+                    and getting coffee with friends.</p>
+
+
+                <div class="child-flex-container">
+                    <h3>I'm currently working with:</h3>
+                    <div class="col1">
+                        <ul class="arrow">
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="col2">
+                        <ul class="arrow">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="flex-container">
-        <div class="skills-box">
-            <h3>Programming & Markup Languages:</h3>
-            <div class="child-flex-container">
-                <div class="col1">
+        <div class="project-box" id="Projects">
+            <h2 id="Projects">Software Projects</h2>
+            <div class="project-list">
+                <button class="project-button" id="edesiaButton" onclick="display(this.id)" type="button">❖
+                    Edesia</button>
+                <button class="project-button" id="bookstoreButton" onclick="display(this.id)" type="button">❖ Online
+                    Bookstore Project</button>
+                <button class="project-button" id="helpSystemButton" onclick="display(this.id)" type="button">❖ Car
+                    Service Help System</button>
+            </div>
+            <div class="project-description">
+                <div id="edesia" style="display: block;">
+                    <div class="row">
+                        <h3>❖ Edesia</h3>
+                        <a href="https://github.com/aLotofAdam/Edesia" target="_blank">
+                            <img src="/icons/github.svg" alt="GitHub Icon" style="max-width:32px;max-height:32px;"
+                                class="jump"></a>
+                    </div>
                     <ul class="arrow">
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Python</li>
+                        <h4>Description:</h4>
+                        <li>Meal planning and recipe application for the Android platform.
+                            Users can create a profile, search for new recipes to add to their menu,
+                            and manage their grocery lists.</li>
+                        <div class="flex-container-column">
+                            <h4>Tech Stack Used:</h4>
+                            <div class="child-flex-container">
+                                <div class="col1">
+                                    <ul class="arrow">
+                                        <li>Java</li>
+                                        <li>Android Studio</li>
+                                        <li>SQLite</li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="arrow">
+                                        <li>Google's Cloud Vision API</li>
+                                        <li>SourceTree</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Note:</h4>
+                        <li>OCR implemented from Google's Cloud Vision API. Sourcetree was used for version control.
+                        </li>
                     </ul>
                 </div>
-                <div class="col2">
+                <div id="bookstore" style="display: none;">
+                    <div class="row">
+                        <h3>❖ Online Bookstore Project</h3>
+                        <a href="https://github.com/aLotofAdam/Online-Bookstore-Project" target="_blank">
+                            <img src="/icons/github.svg" alt="GitHub Icon" style="max-width:32px;max-height:32px;"
+                                class="jump"></a>
+                    </div>
                     <ul class="arrow">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SQL</li>
-                        <li>PHP</li>
+                        <h4>Description:</h4>
+                        <li>Proof-of-concept online bookstore web application.
+                            Uses a simple webpage interface to query and insert data in the database.</li>
+                        <div class="flex-container-column">
+                            <h4>Tech Stack Used:</h4>
+                            <div class="child-flex-container">
+                                <div class="col1">
+                                    <ul class="arrow">
+                                        <li>PHP</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="arrow">
+                                        <li>jQuery</li>
+                                        <li>MySQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Note:</h4>
+                        <li>XAMPP was used to test the application on a local web server.</li>
+                    </ul>
+                </div>
+                <div id="helpSystem" style="display: none;">
+                    <div class="row">
+                        <h3>❖ Car Service Help System</h3>
+                        <a href="https://github.com/aLotofAdam/Car-Service-Help-System" target="_blank">
+                            <img src="/icons/github.svg" alt="GitHub Icon" style="max-width:32px;max-height:32px;"
+                                class="jump"></a>
+                    </div>
+                    <ul class="arrow">
+                        <h4>Description:</h4>
+                        <li>Knowledge-based help system designed to deduce possible causes for a car breaking down.</li>
+                        <div class="flex-container-column">
+                            <h4>Tech Stack Used:</h4>
+                            <div class="child-flex-container">
+                                <div class="col1">
+                                    <ul class="arrow">
+                                        <li>Prolog</li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="arrow">
+                                        <li>SWI-Prolog Interpreter</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Note:</h4>
+                        <li>A modified version of Bratko's forward-chaining rule interpreter and Bayesian network
+                            interpreter is used.</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="skills-box">
-            <h3>Tools & Platforms:</h3>
-            <div class="child-flex-container">
-                <div class="col1">
-                    <ul class="arrow">
-                        <li>VS Code</li>
-                        <li>Android Studio</li>
-                        <li>Jupyter Notebook</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div class="col2">
-                    <ul class="arrow">
-                        <li>VMware</li>
-                        <li>Ubuntu</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    </div>
+    <div class="flex-container">
 
-        <div class="skills-box">
-            <h3>Knowledge Domain & Soft Skills:</h3>
-            <div class="child-flex-container">
-                <div class="col1">
-                    <ul class="arrow">
-                        <li>Agile Methods</li>
-                        <li>OOP</li>
-                        <li>SDLC</li>
-                        <li>SOLID Principles</li>
-                    </ul>
-                </div>
-                <div class="col2">
-                    <ul class="arrow">
-                        <li>Resilient</li>
-                        <li>Optimistic</li>
-                        <li>Collaborative</li>
-                        <li>Analytical</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="contact-box" id="Contact">
+            <h2>Contact</h2>
+            <p>My inbox is always open if you have any questions, potential projects, or just want to chat.
+                I will do my best to get back to you.</p>
+            <a href="mailto:ajbowers.dev@outlook.com"><button type="button">Email Me</button></a>
+            <a href="https://github.com/aLotofAdam" target="_blank">
+                <img src="/icons/github2.svg" alt="GitHub Icon" style="max-width:32px;max-height:32px;"
+                    class="jump">Checkout my projects on GitHub</a>
+            <a href="https://www.linkedin.com/in/ajbowers-dev/" target="_blank">
+                <img src="/icons/linkedin.svg" alt="LinkedIn Icon" style="max-width:32px;max-height:32px;"
+                    class="jump">Connect with me on LinkedIn</a>
+            <a href="https://twitter.com/alotofAdam" target="_blank">
+                <img src="/icons/twitter.svg" alt="Twitter Icon" style="max-width:32px;max-height:32px;"
+                    class="jump">Follow me on Twitter</a>
         </div>
-    </div>
-    <br>
-    <div class="flex-container">
-        <h2 id="Projects">Software Projects</h2>
-        <br>
-    </div>
-    <div class="flex-container">
-        <div class="project-box">
-            <h3>❖ Edesia</h3>
-            <ul class="arrow">
-                <h4>Description:</h4>
-                <li>Meal planning and recipe application for the Android platform.
-                    Users can create a profile, search for new recipes to add to their menu,
-                    and manage their grocery lists.</li>
-                <h4>Tech Stack Used:</h4>
-                <li>Built with Java, Android Studio, and SQLite.
-                    OCR implemented from Google's Cloud Vision API.
-                    Sourcetree was used for version control.</li>
-            </ul>
-        </div>
-        <div class="project-box">
-            <h3>❖ Online Bookstore Project</h3>
-            <ul class="arrow">
-                <h4>Description:</h4>
-                <li>Proof-of-concept online bookstore web application.
-                    Uses a simple webpage interface to query and insert data in the database.</li>
-                <h4>Tech Stack Used:</h4>
-                <li>Built with HTML, CSS, PHP, jQuery, and MySQL.
-                    XAMPP was used to test the application on a local web server.</li>
-            </ul>
-        </div>
-        <div class="project-box">
-            <h3>❖ Car Service Help System</h3>
-            <ul class="arrow">
-                <h4>Description:</h4>
-                <li>Knowledge-based help system designed to deduce possible causes for a car breaking down.</li>
-                <h4>Tech Stack Used:</h4>
-                <li>Prolog was used to make this program.
-                    It was tested using the SWI-Prolog interpreter.
-                    A modified version of Bratko's forward-chaining rule interpreter and Bayesian network interpreter is
-                    used.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="top-footer">
-        <a href="https://github.com/aLotofAdam/aLotofAdam.github.io" target="_blank">
-            This Website is Designed & Built by Adam Bowers</a>
     </div>
     <footer>
+        <a href="https://github.com/aLotofAdam/aLotofAdam.github.io" target="_blank">
+            This Website is Designed & Built by Adam Bowers</a>
         <a href="https://github.com/aLotofAdam/aLotofAdam.github.io" target="_blank">
             <img src="/icons/github2.svg" alt="GitHub Icon" class="jump" style="max-width:32px;max-height:32px;"></a>
         <br>
         <a href='#top'><img src="/icons/top-24px.svg" class="jump" alt="To Top of Page"></a>
     </footer>
-    <!--<script src="script.js"></script>-->
+    <script src="flair.js"></script>
 </body>
 
 </html>

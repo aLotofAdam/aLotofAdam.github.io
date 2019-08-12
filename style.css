@@ -4,29 +4,14 @@ html {
     font-family: Helvetica, sans-serif;
 }
 
-body {
-    font-size: 100%;
-    background-color: rgb(235, 235, 235);
-    width: 100%;
-    margin: 0;
-    text-align: center;
-}
-
 nav {
     display: flex;
-    background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
     padding: 20px;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-}
-
-nav a {
-    display: contents;  /*fix for firefox images*/
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-right: auto;
 }
 
 button {
@@ -40,20 +25,45 @@ button:hover {
 }
 
 header {
-    background-image: linear-gradient(to right, rgb(14, 218, 133), rgb(29, 230, 230));
-    padding: 5px;
+    background-image: linear-gradient(316deg, rgb(66, 141, 167) 0%, rgb(66, 141, 167) 20%,
+        rgb(58, 169, 170) 20%, rgb(58, 169, 170) 25%, rgb(50, 196, 173) 25%,
+        rgb(50, 196, 173) 27%, rgb(42, 224, 176) 27%, rgb(42, 224, 176) 100%);
+    padding: 15px;
     text-align: start;
     width: 100%;
-    display: flex;
     margin: auto;
     color: grey;
-    line-height: .5em;
-    flex-flow: row wrap;
+    box-shadow: 0 3px 3px grey;
+    margin-bottom: 4em;
+}
+
+body {
+    font-size: 100%;
+    background-image: linear-gradient(68deg, rgb(90, 104, 158) 0%, rgb(90, 104, 158) 20%,
+        rgb(82, 124, 161) 20%, rgb(82, 124, 161) 25%,rgb(74, 144, 164) 25%, 
+        rgb(74, 144, 164) 27%,rgb(66, 164, 167) 27%, rgb(66, 164, 167) 73%,
+        rgb(58, 184, 170) 73%, rgb(58, 184, 170) 75%,rgb(50, 204, 173) 75%, 
+        rgb(50, 204, 173) 80%,rgb(42, 224, 176) 80%, rgb(42, 224, 176) 100%);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    background-image: linear-gradient(333deg, rgb(66, 164, 167) 0%, rgb(66, 164, 167) 73%, 
+        rgb(74, 144, 164) 73%, rgb(74, 144, 164) 75%, rgb(82, 124, 161) 75%, 
+        rgb(82, 124, 161) 80%, rgb(90, 104, 158) 80%, rgb(90, 104, 158) 100%);
+    padding: 15px;
+    padding-top: 5em;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    box-shadow: 0 3px 3px grey;
-    margin-bottom: 2em;
+    color: white;
+    box-shadow: -3px 0 3px 3px grey;
 }
 
 .flex-container {
@@ -64,34 +74,60 @@ header {
     align-content: center;
 }
 
+.flex-container-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
 .about-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    width: 60%;
+    width: 80%;
     box-shadow: 3px 3px 0px 0px grey;
     border-top: 2px solid rgb(20, 196, 196);
     border-left: 5px solid rgb(17, 177, 177);
     background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: start;
+    text-align: center;
+    margin-bottom: 4em;
+    animation-name: fadeInUp;
+    animation-duration: 4s;
+    padding: 20px;
 }
 
-.about-container-1 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    width: 60%;
-    box-shadow: 3px 3px 0px 0px grey;
-    border-left: 5px solid rgb(17, 177, 177);
-    background-color: white;
-    text-align: center;
-    padding: 10px;
+.contact-box {
+        display: flex;
+        padding: 20px;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+        box-shadow: 3px 3px 0px 0px grey;
+        border-top: 2px solid rgb(20, 196, 196);
+        border-left: 5px solid rgb(17, 177, 177);
+        background-color: white;
+        margin-bottom: 4em;
+        animation-name: fadeInUp;
+    animation-duration: 4s;
 }
 
 .child-flex-container {
@@ -102,76 +138,125 @@ header {
     align-content: center;
 }
 
-footer, .top-footer {
-    background-image: linear-gradient(to right, rgb(29, 230, 230), rgb(14, 218, 133));
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    color: white;
-}
-
-.top-footer {
-    box-shadow: -3px 0 3px 3px grey;
-    margin-top: 2em;
-}
-
 .skills-box {
-    width: 40%;
     background-color: white;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
     text-align: start;
     box-shadow: 3px 3px 0px 0px grey;
     border-top: 2px solid rgb(20, 196, 196);
     border-left: 5px solid rgb(17, 177, 177);
-    margin-top: 2em;
+    animation-name: fadeInUp;
+    animation-duration: 4s;
+    margin-bottom: 1em;
 }
 
 .project-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-between;
     width: 80%;
     background-color: white;
     padding: 10px;
-    padding-right: 40px;
     box-shadow: 3px 3px 0px 0px grey;
     text-align: start;
     border-top: 2px solid rgb(20, 196, 196);
     border-left: 5px solid rgb(17, 177, 177);
-    margin-top: 2em;
+    animation-name: fadeInUp;
+    animation-duration: 4s;
+    margin-bottom: 4em;
+}
+
+.project-button {
+    margin-bottom: 10px;
+}
+
+.project-list {
+
+    width: 25%;
+}
+
+.project-description {
+    width: 70%;
 }
 
 .intro-box {
-    width: 80%;
+    width: 65%;
     padding-bottom: 2em;
+    padding-left: 30px;
+    line-height: .5em;
+    animation-name: fadeInUp;
+    animation-duration: 4s;
+    display: flex;
+    margin-right: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 }
 
 .intro-box p {
     margin: 0px;
 }
 
+/*Fade in up start*/
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+/*fade in up end*/
+
 .col1, .col2 {
     text-align: start;
-    width: 50%;
 }
 
 /*intro-box*/
 h1 {
     font-size: 3.5em;
     color: white;
-    line-height: 1.5em;
+    line-height: 1.25em;
     margin: 0;
+    width: 100%;
 }
 
 /*intro-box subtitle*/
 h5 {
     font-size: 2.5em;
     color: rgb(11, 121, 121);
-    line-height: 1.5em;
+    line-height: 1.25em;
     margin: 0;
+    width: 100%;
 }
 
 .intro-box p {
@@ -183,6 +268,9 @@ h2 {
     font-size: 1.875em;
     border-bottom: 1px solid lightgrey;
     margin: auto;
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: center;
 }
 
 /*skills-box, project subtitle*/
@@ -193,39 +281,12 @@ h3 {
     border-bottom: 1px solid lightgrey;
     margin: 0;
     text-align: start;
+    width: 100%
 }
 
 p, ul {
     font-size: 1em;
     line-height: 1.5em;
-}
-
-table {
-    width: 100%;
-}
-
-td {
-    padding: 10px;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
-    
-    text-align: center;
-    font-size: 1.875em;
-    opacity: 1;
-
-    margin-top: auto;
-    margin-right: auto;
-}
-
-td::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-td:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
 }
 
 nav img {
@@ -252,12 +313,15 @@ nav img {
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out;
     margin-top: 5px;
+    margin-bottom: 1.5em;
+    margin-right: 10px;
 }
 
 .jump:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
     margin-top: 2px;
+    padding-bottom: 3px;
 }
 
 ul.arrow li {
@@ -298,18 +362,22 @@ li#email {
 
 /*when screen is < 813px wide, stack columns*/
 @media screen and (max-width: 813px) {
-    .about-container, .child-flex-container {
+    .about-container, .child-flex-container, .project-box {
         width: 100%;
         flex-flow: row wrap;
     }
     
-    .about-container-1, .flex-container, .skills-box, .project-box {
+    .flex-container-column, .flex-container, .skills-box {
         flex-flow: column wrap;
         width: 100%;
     }
 
-    .about-container, .about-container-1, .skills-box, .project-box {
+    .about-container, .flex-container-column, .skills-box, .project-box {
         border-right: 1px solid rgb(235, 235, 235);
+    }
+
+    .about-container {
+        margin-bottom: 1em;
     }
 
     h1 {

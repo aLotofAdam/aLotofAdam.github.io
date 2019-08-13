@@ -84,7 +84,12 @@ footer {
 
 .row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    padding-left: 25%;
+    padding-right: 30%;
 }
 
 .column {
@@ -114,12 +119,7 @@ footer {
 }
 
 .contact-box {
-        display: flex;
         padding: 20px;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: center;
         width: 80%;
         box-shadow: 3px 3px 0px 0px grey;
         border-top: 2px solid rgb(20, 196, 196);
@@ -128,14 +128,6 @@ footer {
         margin-bottom: 4em;
         animation-name: fadeInUp;
     animation-duration: 4s;
-}
-
-.contact-box p{
-    text-align: center;
-}
-
-.contact-box a{
-    padding-left: 20%;
 }
 
 .child-flex-container {
@@ -372,7 +364,7 @@ li#email {
 
 /*when screen is < 813px wide, stack columns*/
 @media screen and (max-width: 813px) {
-    .about-container, .child-flex-container, .project-box {
+    .about-container, .child-flex-container, .project-box, .contact-box {
         width: 100%;
         flex-flow: row wrap;
     }
@@ -382,12 +374,8 @@ li#email {
         width: 100%;
     }
 
-    .about-container, .flex-container-column, .skills-box, .project-box {
+    .about-container, .flex-container-column, .skills-box, .project-box, .contact-box {
         border-right: 1px solid rgb(235, 235, 235);
-    }
-
-    .about-container {
-        margin-bottom: 1em;
     }
 
     h1 {

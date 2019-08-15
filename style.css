@@ -130,6 +130,14 @@ footer {
     animation-duration: 4s;
 }
 
+.project-child-flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
 .child-flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -287,6 +295,11 @@ h3 {
 p, ul {
     font-size: 1em;
     line-height: 1.5em;
+}
+
+img {
+    min-height: 0;
+    height: 32px;
 }
 
 nav img {

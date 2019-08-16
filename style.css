@@ -146,20 +146,6 @@ footer {
     align-content: center;
 }
 
-.skills-box {
-    background-color: white;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 100%;
-    text-align: start;
-    box-shadow: 3px 3px 0px 0px grey;
-    border-top: 2px solid rgb(20, 196, 196);
-    border-left: 5px solid rgb(17, 177, 177);
-    animation-name: fadeInUp;
-    animation-duration: 4s;
-    margin-bottom: 1em;
-}
-
 .project-box {
     display: flex;
     flex-flow: row wrap;
@@ -180,11 +166,15 @@ footer {
 
 .project-button {
     margin-bottom: 10px;
+    text-align: start;
+    margin-right: 5px;
 }
 
 .project-list {
-
-    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
 }
 
 .project-description {
@@ -281,7 +271,7 @@ h2 {
     text-align: center;
 }
 
-/*skills-box, project subtitle*/
+/*skills, project subtitle*/
 h3 {
     font-size: 1.25em;
     padding-top: .5em;
@@ -382,13 +372,31 @@ li#email {
         flex-flow: row wrap;
     }
     
-    .flex-container-column, .flex-container, .skills-box {
+    .flex-container-column, .flex-container {
         flex-flow: column wrap;
         width: 100%;
     }
 
-    .about-container, .flex-container-column, .skills-box, .project-box, .contact-box {
+    .about-container, .project-box, .contact-box {
         border-right: 1px solid rgb(235, 235, 235);
+    }
+
+    .project-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: space-between;
+        padding-left: 1%;
+        padding-right: 2%;
     }
 
     h1 {

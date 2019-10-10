@@ -11,7 +11,7 @@ function display(id) {
     }
 
     else if (id === "bookstoreButton") {
-        var x = document.getElementById("bookstore");
+        var x = document.getElementBy("bookstore");
         if (x.style.display === "none") {
             document.getElementById("edesia").style.display = "none";
             document.getElementById("helpSystem").style.display = "none";

@@ -21,7 +21,8 @@ button {
 }
 
 button:hover {
-    background-color: rgba(17, 177, 177, 0.5);
+    background-color: rgba(16, 187, 187, 0.747);
+    box-shadow: 3px grey;
 }
 
 header {

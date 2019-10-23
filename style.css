@@ -124,8 +124,7 @@ footer {
     width: 50%;
 }
   
-.image {
-    display: block;
+.pic {
     width: 100%;
     height: auto;
 }
@@ -337,14 +336,6 @@ nav img {
     height: auto;
 }
 
-.pic {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
 .jump {
     transition: margin 0.5s ease-out; 
     -webkit-transition: margin 0.5s ease-out;
@@ -360,6 +351,7 @@ nav img {
     filter: alpha(opacity=50);
     margin-top: 2px;
     padding-bottom: 3px;
+    margin-bottom: 1.5em;
 }
 
 ul.arrow li {

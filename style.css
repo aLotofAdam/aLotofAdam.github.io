@@ -121,12 +121,13 @@ footer {
 
 .image-container {
     position: relative;
-    width: 50%;
 }
   
 .pic {
     width: 100%;
     height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
   
 .overlay {
@@ -139,7 +140,6 @@ footer {
     width: 0;
     height: 100%;
     max-height: 320px; 
-    max-width: 229px;
     transition: .5s ease;
 }
   
@@ -344,7 +344,7 @@ nav img {
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out;
     margin-top: 5px;
-    margin-bottom: 1.5em;
+    margin-bottom: 24px;
     margin-right: 10px;
 }
 
@@ -353,7 +353,7 @@ nav img {
     filter: alpha(opacity=50);
     margin-top: 2px;
     padding-bottom: 3px;
-    margin-bottom: 1.5em;
+    margin-bottom: 27px;
 }
 
 ul.arrow li {
@@ -375,7 +375,6 @@ ul.relative {
     position: relative;
     line-height: 2.8em;
     margin-top: 1em;
-    margin-left: 10px;
 }
 
 li#work {
